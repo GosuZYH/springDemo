@@ -27,9 +27,9 @@ public class UserController {
         return "Test name success!";
     }
 
-    @GetMapping("/{name}")
-    public User findByName(@PathVariable String name) {
-        return userService.findByName(name);
+    @GetMapping("/{id}")
+    public User findById(@PathVariable Integer id) {
+        return userService.findById(id);
     }
 
 

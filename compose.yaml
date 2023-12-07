@@ -1,0 +1,21 @@
+services:
+  mysql:
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=mydatabase'
+      - 'MYSQL_PASSWORD=zyhZYH123123!'
+      - 'MYSQL_ROOT_PASSWORD=zyhZYH123123!'
+      - 'MYSQL_USER=gosu'
+    ports:
+      - '3306'
+  rabbitmq:
+    image: 'rabbitmq:latest'
+    environment:
+      - 'RABBITMQ_DEFAULT_PASS=secret'
+      - 'RABBITMQ_DEFAULT_USER=myuser'
+    ports:
+      - '5672'
+  redis:
+    image: 'redis:latest'
+    ports:
+      - '6379'

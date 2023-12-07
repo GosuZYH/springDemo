@@ -20,8 +20,8 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     @Override
-    public User findByName(String name) {
-        return userMapper.findByName(name);
+    public User findById(Integer id) {
+        return userMapper.findById(id);
     }
 
 }

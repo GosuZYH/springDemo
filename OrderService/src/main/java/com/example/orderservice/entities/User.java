@@ -2,19 +2,16 @@
  *   (C) Copyright . Corporation 2023 All Rights Reserved.
  * *****************************************************************************
  *    Author    : GosuZYH
- *    FileName  : Order
- *     Time     : 2023/12/6-14:13
+ *    FileName  : User
+ *     Time     : 2023/12/7-9:53
  *******************************************************************************/
 package com.example.orderservice.entities;
 
 import lombok.Data;
 
 @Data
-public class Order {
+public class User {
     private Integer id;
-    private String user_id;
     private String name;
-    private Integer price;
-    private Integer num;
-    private User user;
+    private String address;
 }
